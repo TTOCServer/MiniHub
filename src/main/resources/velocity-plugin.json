@@ -1,0 +1,10 @@
+{
+  "id": "minihub",
+  "name": "MiniHub",
+  "version": "1.0-SNAPSHOT",
+  "description": "简单的命令到服务器的实现",
+  "url": "https://github.com/",
+  "authors": ["OutHimic"],
+  "dependencies": [],
+  "main": "cn.craftime.miniHub.MiniHub"
+}
