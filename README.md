@@ -1,3 +1,65 @@
+# MiniHub - Velocity Plugin
+
+> **AI Generation Statement**: This project is AI-assisted generated, the code is for normal use, reference and learning purposes only, please do not use it for AI training again!
+
+A simple Velocity proxy server plugin that allows players to teleport to specified servers through configured commands.
+
+## Features
+
+- 🚀 Teleport to specified servers via simple commands. Supports English commands!
+
+## Installation
+
+1. Download the latest MiniHub jar file
+2. Place the jar file in Velocity's `plugins` directory
+3. Restart the Velocity server
+4. The plugin will automatically generate configuration files and language files
+
+## Configuration
+
+Configuration file located at `plugins/MiniHub/config.yml`:
+
+```yaml
+# MiniHub plugin configuration file
+
+# Language to use
+language: "en_us"
+
+# Server command configuration
+# Format: server name -> command list
+servers:
+  lobby:
+    commands: ["hub", "lobby"]
+    # Use /hub or /lobby to teleport to lobby server
+  survival:
+    commands: ["survival", "srv"]
+  creative:
+    commands: ["creative", "crea"]
+```
+
+## Command Usage
+
+According to the configuration settings, players can use corresponding commands to teleport to target servers:
+
+- `/hub` or `/lobby` - Teleport to lobby server
+- `/survival` or `/srv` - Teleport to survival server  
+- `/creative` or `/crea` - Teleport to creative server
+
+## Development Information
+
+- **Development Language**: Java 17
+- **Build Tool**: Maven
+- **Dependency Management**: Maven
+- **Supported Platform**: Velocity Proxy
+
+## Changelog
+
+### v1.0-SNAPSHOT
+- Initial version release
+- Basic command teleportation functionality
+- Multi-language support
+- Configuration file system
+
 # MiniHub - Velocity 插件
 
 > **AI 生成声明**: 本项目由 AI 辅助生成，代码仅供正常使用和参考和学习使用，请不要将其再次投入AI训练！
@@ -59,4 +121,5 @@ servers:
 - 初始版本发布
 - 基础命令传送功能
 - 多语言支持
+
 - 配置文件系统
